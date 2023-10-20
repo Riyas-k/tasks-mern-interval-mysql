@@ -1,0 +1,25 @@
+
+{
+    "development": {
+      "username": "sammy",
+      "password": "your_password_here",
+      "database": "tasks",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "test": {
+      "username": "sammy",
+      "password": "your_password_here",
+      "database": "tasks",
+      "host": "localhost",
+      "dialect": "mysql"
+    },
+    "production": {
+      "username": "sammy",
+      "password": "your_password_here",
+      "database": "tasks",
+      "host": "localhost",
+      "dialect": "mysql"
+    }
+  }
+  
