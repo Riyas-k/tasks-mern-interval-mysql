@@ -34,7 +34,6 @@ Task Management System is a full-stack web application for managing tasks with a
 - **Backend:** Node.js, Express.js, Sequelize (with MySQL), AWS SDK
 - **Frontend:** Vite, React
 - **Database:** MySQL
-- **File Upload:** Multer
 - **AWS:** Amazon S3 Bucket
 - **Version Control:** Git, GitHub
 
