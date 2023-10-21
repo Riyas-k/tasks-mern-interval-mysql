@@ -127,7 +127,6 @@ export const deleteTask = async (req, res) => {
 };
 export const getTask = async (req, res) => {
   try {
-    console.log(req.params);
     const { id } = req.params;
     const task = await getTaskById(id);
     if (!task) res.status(404).json({ error: "Task not found" });

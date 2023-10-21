@@ -11,6 +11,13 @@ Task Management System is a full-stack web application for managing tasks with a
 **Developer:** Riyas
 **Email:** mohammedriyazriyaz04@gmail.com
 
+## Postman API Documentation
+
+You can find detailed API documentation for this project in our Postman collection:
+
+[View API Documentation](https://documenter.getpostman.com/view/23154953/2s9YRB4CkP)
+
+
 ## Table of Contents
 
 - [Features](#features)
