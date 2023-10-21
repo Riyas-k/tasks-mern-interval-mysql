@@ -27,7 +27,7 @@ export const listTasks = async (req, res) => {
 };
 export const addTask = async (req, res) => {
   try {
-    const { name, data, mimetype } = req.files.files;
+    const { name, data, mimetype } = req.files.image;
     const { heading, description, date, time } = req.body;
     const uploadParams = {
       Bucket: "sampleupload",
@@ -69,7 +69,7 @@ export const editTask = async (req, res) => {
     const existingTask = await getTaskById(id);
     if (!existingTask) res.status(404).json({ error: "Task not found" });
     let imageUrl = existingTask.dataValues.Image;
-    const { name, data, mimetype } = req.files.files;
+    const { name, data, mimetype } = req.files.image;
     if (name && data) {
       const uploadParams = {
         Bucket: "sampleupload",
@@ -127,7 +127,7 @@ export const deleteTask = async (req, res) => {
 };
 export const getTask = async (req, res) => {
   try {
-    console.log("ji");
+    console.log(req.params);
     const { id } = req.params;
     const task = await getTaskById(id);
     if (!task) res.status(404).json({ error: "Task not found" });
